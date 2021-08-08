@@ -1,30 +1,58 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import {
-  NavbarContainer,
+
   NavbarElements,
   NavLogo,
   Logo,
   NavLink,
   NavLinks,
+  HamburgerIcon,
+  NavItem,
+  NavbarHeader
 } from "./Navbar.Elements";
 
 export default function Navbar() {
+  const [click, setClick] = useState(false);
+ 
+  console.log(click);
+  
+  const handleClick = () => {
+    setClick(!click);
+    console.log(click);
+  };
+
   return (
     <>
-      <NavbarContainer>
+     
+
         <NavbarElements>
+
+        <NavbarHeader>
           <NavLogo>
             <Logo />
             React Conf
           </NavLogo>
 
-          <NavLinks>
-            <NavLink>Speakers</NavLink>
-            <NavLink>Schdule</NavLink>
-            <NavLink>Code of Conduct</NavLink>
+          <HamburgerIcon onClick={handleClick}>
+            {click ? <FaTimes /> : <FaBars />}
+          </HamburgerIcon>
+
+        </NavbarHeader>
+
+          <NavLinks click={click}>
+            <NavItem>
+              <NavLink>Speakers</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>Schedule</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>Code of Conduct</NavLink>
+            </NavItem>
           </NavLinks>
         </NavbarElements>
-      </NavbarContainer>
+     
     </>
   );
 }
