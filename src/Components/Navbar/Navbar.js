@@ -48,7 +48,7 @@ export default function Navbar() {
               <NavLink>Schedule</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink>Code of Conduct</NavLink>
+              <NavLink>COC</NavLink>
             </NavItem>
           </NavLinks>
         </NavbarElements>
