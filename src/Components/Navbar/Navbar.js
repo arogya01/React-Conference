@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import {
 
@@ -29,7 +29,8 @@ export default function Navbar() {
         <NavbarElements>
 
         <NavbarHeader>
-          <NavLogo>
+          
+          <NavLogo to='/'>
             <Logo />
             React Conf
           </NavLogo>
@@ -42,13 +43,13 @@ export default function Navbar() {
 
           <NavLinks click={click}>
             <NavItem>
-              <NavLink>Speakers</NavLink>
+              <NavLink to='/Speakers'>Speakers</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink>Schedule</NavLink>
+              <NavLink to='/Schedule'>Schedule</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink>COC</NavLink>
+              <NavLink to='/COC'>COC</NavLink>
             </NavItem>
           </NavLinks>
         </NavbarElements>

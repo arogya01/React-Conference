@@ -36,10 +36,13 @@ export const HeroButton = styled.button`
   border: none;
   border-radius: 10px;
   background-color: #e76b74;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 1rem 0.5rem;
   color: #fff;
-  font-weight: normal;
   cursor: pointer;
   width: 50%;
+
+&:hover{
+  background-color:#e55b64;
+}
 `;

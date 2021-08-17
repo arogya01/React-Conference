@@ -9,7 +9,8 @@ export const CardContainer = styled.div`
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin: 2rem 2rem;
+  padding:3.6rem 3.6rem;
+  
 
   @media screen and (max-width: 570px) {
     width: 82%;

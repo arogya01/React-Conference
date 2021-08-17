@@ -1,11 +1,11 @@
 import React from "react";
-import { Card } from "../../Components/Card/Card";
+import { Card } from "../../Components/FeatureCard/FeatureCard";
 
 import {
   SectionContainer,
   SectionHeader,
   SectionCardContainer,
-} from "./Section.Elements";
+} from "./FeatureSection.Elements";
 
 const Section = ({
   bgColor,

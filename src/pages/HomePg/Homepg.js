@@ -1,13 +1,13 @@
 import React from 'react'
-import { HeroSection,Section } from '../../Components';
-import {hero,featureSection,speakerSection} from './Data';
+import { HeroSection,FeatureSection ,SpeakerSection} from '../../Components';
+import {hero,featureSection,speaker} from './Data';
 
 const Homepg = () => {
     return (
         <>
         <HeroSection {...hero} />
-        <Section {...featureSection} />
-        <Section {...speakerSection} />
+        <FeatureSection {...featureSection} />
+        <SpeakerSection {...speaker} />
         </>
     )
 }

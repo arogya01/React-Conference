@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import {SpeakerSection} from '../../Components';
+import {speaker} from './Data';
+
 
 const Speakers = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <SpeakerSection {...speaker} /> 
+        </>
     )
 }
 

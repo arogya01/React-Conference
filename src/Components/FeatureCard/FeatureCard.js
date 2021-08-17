@@ -1,5 +1,5 @@
 import React from 'react';
-import {CardContainer,CardImg,CardContent} from './Card.Elements';
+import {CardContainer,CardImg,CardContent} from './FeatureCard.Elements';
 
 
 export const Card = ({Content,imgSrc}) => {

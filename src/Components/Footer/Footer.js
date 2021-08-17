@@ -8,25 +8,36 @@ import {
   SocialLinks,
   LinkItem,
   FooterLink,
+  WebsiteLogo,
+  Logo,
+  Links
 } from "./Footer.Elements";
 
 const Footer = () => {
   return (
     <>
       <FooterContainer>
+        
         <NewsletterSection>
           <NewsletterHead>Register for the Event Today</NewsletterHead>
           <NewsletterInput name="email" placeholder="your email" />
+          
+          <WebsiteLogo>
+            <Logo />
+            React Conf
+          </WebsiteLogo>
         </NewsletterSection>
+        <Links>
+        
         <FooterLinks>
           <LinkItem>
-            <FooterLink>Speakers</FooterLink>
+            <FooterLink to='/Speakers'>Speakers</FooterLink>
           </LinkItem>
           <LinkItem>
-            <FooterLink>Schedule</FooterLink>
+            <FooterLink to='/Schedule'>Schedule</FooterLink>
           </LinkItem>
           <LinkItem>
-            <FooterLink>Code of Conduct</FooterLink>
+            <FooterLink to='/COC'>Code of Conduct</FooterLink>
           </LinkItem>
             
         </FooterLinks>
@@ -41,6 +52,7 @@ const Footer = () => {
             <FooterLink>Facebook</FooterLink>
           </LinkItem>
         </SocialLinks>
+        </Links>
       </FooterContainer>
     </>
   );

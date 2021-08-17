@@ -38,15 +38,17 @@ export const NavbarHeader = styled.div`
   }
   `;
 
-export const NavLogo = styled.div`
+export const NavLogo = styled(Link)`
   display: flex;
   flex-flow: row nowrap;
   align-self: flex-start;
   height: 100%;
+  text-decoration:none;
+  color:#fff;
 `;
 
 export const Logo = styled(AiTwotoneThunderbolt)`
-  margin-right: 0%.5px;
+  margin-right: 0 0.5rem;
 `;
 
 export const HamburgerIcon = styled.div`
@@ -81,7 +83,7 @@ export const NavItem = styled.li`
   
 
   &:hover {
-    background-color: #df3a45;
+    background-color: #e55b64;
   }
 
   @media screen and (max-width: 960px) {
